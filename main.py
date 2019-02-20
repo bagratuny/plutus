@@ -41,5 +41,6 @@ while True:
                 user, say_hi.format(
                     USERS[user]['name'], now, user))
             scan(USERS[user]['sites'].items())
+        bot.send_message(user, 'Сеанс окончен. До завтра!')
 
     time.sleep(60)

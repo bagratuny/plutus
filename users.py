@@ -1,12 +1,12 @@
 USERS = {
-    '738608821': {
-        'time': 'night',
-        'name': 'Петя',
-        'sites': {
-            'Site1': 'http://senya.me/',
-            'Site2': 'http://senya.me/biznes'
-        }
-    },
+    # '738608821': {
+    #     'time': 'd',
+    #     'name': 'Петя',
+    #     'sites': {
+    #         'Site1': 'http://senya.me/',
+    #         'Site2': 'http://senya.me/biznes'
+    #     }
+    # },
     '5031381': {
         'time': 'night',
         'name': 'Арсений',
