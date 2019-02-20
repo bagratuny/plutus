@@ -42,4 +42,4 @@ while True:
                     USERS[user]['name'], now, user))
             scan(USERS[user]['sites'].items())
 
-    time.sleep(43200)
+    time.sleep(60)

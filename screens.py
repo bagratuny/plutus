@@ -37,7 +37,7 @@ def make_screenshot(link, browser, user, date, filename):
     except:
         print('cannot find container')
 
-    # sleep(2)
+    sleep(2)
 
     try:
         os.mkdir('folder/{}'.format(user))
@@ -66,7 +66,3 @@ def make_screenshot(link, browser, user, date, filename):
         im.save(path_to_file)
     except:
         print()
-
-    # browser.quit()
-
-    # sleep(10)
