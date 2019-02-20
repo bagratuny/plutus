@@ -69,3 +69,5 @@ def make_screenshot(link, browser, user, date, filename):
         im.save(path_to_file)
     except:
         print()
+
+    sleep(15)
