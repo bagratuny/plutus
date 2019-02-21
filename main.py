@@ -21,9 +21,13 @@ def scan(sites):
             "folder/{}/{}/{}.png".format(user, now.day, key), "rb")
         bot.send_document(user, document)
     browser.close()
+    now = datetime.datetime.now()
+    bot.send_message(
+        user, 'Время (UTC±0:00): {}\nСеанс окончен. До завтра!'.format(now))
+    time.sleep(120)
 
 
-say_hi = 'Доброго времени суток, {}! Скоро пришлю файлы.\nВремя: {}, ваш ID: {}'
+say_hi = 'Доброго времени суток, {}! Скоро пришлю файлы.\nВремя (UTC±0:00): {}, ваш ID: {}'
 
 while True:
     now = datetime.datetime.now()
@@ -41,6 +45,6 @@ while True:
                 user, say_hi.format(
                     USERS[user]['name'], now, user))
             scan(USERS[user]['sites'].items())
-        bot.send_message(user, 'Сеанс окончен. До завтра!')
+        bot.send_message('5031381', 'Дебаг.\nВремя (UTC±0:00): {}'.format(now))
 
     time.sleep(60)
