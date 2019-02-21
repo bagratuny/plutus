@@ -19,7 +19,10 @@ def scan(sites):
         screens.make_screenshot(site, browser, user, now.day, key)
         document = open(
             "folder/{}/{}/{}.png".format(user, now.day, key), "rb")
-        bot.send_document(user, document)
+        try:
+            bot.send_document(user, document)
+        except telebot.apihelper.ApiException:
+            bot.send_message(user, "Error: telebot.apihelper.ApiException")
     browser.close()
     now = datetime.datetime.now()
     bot.send_message(
@@ -28,6 +31,7 @@ def scan(sites):
 
 
 say_hi = 'Доброго времени суток, {}! Скоро пришлю файлы.\nВремя (UTC±0:00): {}, ваш ID: {}'
+
 
 while True:
     now = datetime.datetime.now()

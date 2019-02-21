@@ -1,5 +1,6 @@
-ghostdriver.log
 links.py
-geckodriver.log
+users.py
 folder
+
+*.log
 __pycache__

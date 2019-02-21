@@ -1,12 +1,12 @@
 USERS = {
-    # '738608821': {
-    #     'time': 'd',
-    #     'name': 'Петя',
-    #     'sites': {
-    #         'Site1': 'http://senya.me/',
-    #         'Site2': 'http://senya.me/biznes'
-    #     }
-    # },
+    '738608821': {
+        'time': 'night',
+        'name': 'Петя',
+        'sites': {
+            'Site1': 'http://senya.me/',
+            'Site2': 'http://senya.me/biznes'
+        }
+    },
     '5031381': {
         'time': 'night',
         'name': 'Арсений',
@@ -16,7 +16,8 @@ USERS = {
             'Option_2': 'https://www.moex.com/ru/contract.aspx?code=NM14250BC9',
             'Option_3': 'https://www.moex.com/ru/contract.aspx?code=NM14500BC9',
             'Option_4': 'https://www.moex.com/ru/contract.aspx?code=NM14000BO9',
-            'Option_5': 'https://www.moex.com/ru/contract.aspx?code=NM14250BO9'
+            'Option_5': 'https://www.moex.com/ru/contract.aspx?code=NM14250BO9',
+            'time': 'https://time.is/ru/'
         }
     },
 
